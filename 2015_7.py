@@ -20,6 +20,6 @@ for r in res:
         if r[i] == 'G':
             text += 'C'
     text += "\n"
-    print(r)
+#    print(r)
 
 print(text)
