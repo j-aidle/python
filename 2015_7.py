@@ -1,6 +1,7 @@
 res = []
 text=""
 
+
 while True:
     a = input()
     if "." in a:
@@ -8,16 +9,17 @@ while True:
         break
     res.append(a)
 
-for i in range(a):
-    if a.charAt(i) == 'A':
-        text += 'T'
-    if a.charAt(i) == 'T':
-        text += 'A'
-    if a.charAt(i) == 'C':
-        text += 'G'
-    if a.charAt(i) == 'G':
-        text += 'C'
-
-
 for r in res:
+    for i in reversed(range(len(r))):
+        if r[i] == 'A':
+            text += 'T'
+        if r[i] == 'T':
+            text += 'A'
+        if r[i] == 'C':
+            text += 'G'
+        if r[i] == 'G':
+            text += 'C'
+    text += "\n"
     print(r)
+
+print(text)
